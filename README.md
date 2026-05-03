@@ -26,5 +26,8 @@ Copy `.env.example` to `.env` and set values for:
 - `DATABASE_URL`
 - `OPENAI_API_KEY`
 
+## CI
+`.github/workflows/ci.yml` validates required deployment files and HTML output on every push/pull request. If a `package.json` is added later, it will also run available scripts (`lint`, `check`, `typecheck`, `test`, `build`).
+
 ## License
 See LICENSE file for details.
